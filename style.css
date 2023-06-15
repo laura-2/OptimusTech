@@ -1,0 +1,214 @@
+:root{
+    --color-gray: #101828;
+    --color-red: #8E2424;
+    --color-gray-light: #667085;
+    --color-gray-light400: #98A2B3;
+    --color-white: #ffffff;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-white);
+    font-family: 'Inter', sans-serif;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+}
+.menu-lista{
+    display: flex;
+    gap: 2rem;
+}
+li{
+    list-style: none;
+    color: var(--color-gray-light);
+    font-weight: 500;
+}
+.botao{
+    font-weight: 500;
+    text-decoration: none;
+    
+}
+.botao-entrar{
+    color: var(--color-gray-light);
+    margin-right: 3rem;
+}
+.botao-cadastrar{
+    border: 1px solid var(--color-red);
+    border-radius: 8px;
+    padding: 10px 18px 10px 18px;
+    background-color: var(--color-red);
+    color: var(--color-white);
+}
+.sobre{
+    display: block;
+    text-align: center;
+    gap: 2rem;
+    width: 60%;
+    margin: 96px 325px 107px 250px;
+}
+.sobre-nos{
+    font-size: 16px;
+    color: var(--color-red);
+    font-weight: 600;
+}
+.sobre-titulo{
+    font-size: 48px;
+    color: var(--color-gray);
+    font-weight: 600;
+}
+.sobre-paragrafo{
+    font-size: 20px;
+    color: var(--color-gray-light);
+    font-weight: 400;
+}
+.apresentacao{
+    display: flex;
+    gap: 2rem;
+    margin: 0 112px 96px 112px;
+}
+.apresentacao-bloco{
+    width: 25%;
+}
+.apresentacao-titulo{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-gray);
+}
+.apresentacao-paragrafo{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-gray-light);
+}
+.apresentacao-numero{
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--color-red);
+}
+.vagas{
+    display: block;
+    text-align: center;
+    gap: 2rem;
+}
+.vagas-abertas{
+    color: var(--color-red);
+    border: 1px solid rgba(142, 36, 36, 0.05);
+    background-color: rgba(142, 36, 36, 0.05);
+    padding: 4px 12px;
+    border-radius: 16px;
+    margin-inline: 600px;
+}
+.profissoes{
+    display: block;
+    align-items: center;
+    width: 600px;
+    margin: 64px 336px 96px 336px;
+}
+.profissoes-nome{
+    color: var(--color-gray);
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+.profissoes-bloco{
+    border: 1px solid #EAECF0;
+    border-radius: 16px;
+    margin-bottom: 1.5rem;
+    padding: 24px 28px;
+}
+.profissoes-vaga{
+    color: var(--color-gray);
+    font-size: 18px;
+    font-weight: 500;
+}
+.profissoes-flex{
+    display: flex;
+    gap: 1.5rem;
+}
+.profissoes-time{
+    color: var(--color-gray-light);
+    font-size: 16px;
+    font-weight: 500;
+}
+.profissoes-salario{
+    color: var(--color-gray-light);
+    font-size: 16px;
+    font-weight: 500;
+}
+.feedback{
+    display: block;
+    border: 1px solid rgba(142, 36, 36, 0.05);
+    background-color: rgba(142, 36, 36, 0.05);
+    border-radius: 16px;
+    text-align: center;
+    margin: 0 112px 96px 112px;
+    padding: 64px;
+}
+.feedback-paragrafo{
+    color: var(--color-red);
+    font-weight: 600;
+    font-size: 14px;
+}
+.feedback-titulo{
+    font-weight: 500;
+    font-size: 30px;
+    color: var(--color-gray);
+}
+.feedback-image{
+    width: 40px;
+}
+.feedback-nome{
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--color-gray);
+}
+.feedback-profissao{
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--color-gray-light);
+}
+.footer{
+    display: block;
+    background-color: #F9FAFB;
+    text-align: center;
+    padding-block: 96px;
+}
+.footer-titulo{
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--color-gray);
+}
+.footer-subtitulo{
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--color-gray-light);
+}
+.footerdiv{
+    display: flex;
+    gap: 1rem;
+    margin: 40px 474px 32px 495px;
+}
+.footer-input{
+    padding: 12px 14px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-gray-light);
+    border-radius: 8px;
+}
+.footer-button{
+    color: var(--color-white);
+    border: 1px solid var(--color-red);
+    background-color: #8E2424;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.footer-arroba{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-gray-light400);
+}
