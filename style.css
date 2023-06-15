@@ -99,7 +99,10 @@ li{
     background-color: rgba(142, 36, 36, 0.05);
     padding: 4px 12px;
     border-radius: 16px;
-    margin-inline: 600px;
+    margin-inline: 602px;
+}
+.imagem-vagas{
+    margin: 64px 0;
 }
 .profissoes{
     display: block;
