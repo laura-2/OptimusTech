@@ -1,0 +1,18 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "nome": "Laura",
+      "email": "verbinen@gmail.com",
+      "senha": "1234",
+      "senhaConfirma": "1234"
+    },
+    {
+      "nome": "de",
+      "email": "de@gmail.com",
+      "senha": "de",
+      "senhaConfirma": "de",
+      "id": 2
+    }
+  ]
+}

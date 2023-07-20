@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>OptimusTech</title>
 </head>
@@ -23,9 +24,55 @@
             </ul>
         </div>
         <div class="botao">
-            <a class="botao-entrar">Entrar</a>
-            <a class="botao-cadastrar">Cadastrar</a>
+            <a class="botao-entrar" id="entrar">Entrar</a>
+            <a class="botao-cadastrar" id="cadastrar">Cadastrar</a>
         </div>
+        <div class="modal" tabindex="-1" id="modal" style="display: none;  background-color: rgba(0, 0, 0, 0.5);">
+            <div class="modal-dialog" style="margin-top: 20%;">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Entre na sua conta</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="icone"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com" autocomplete="off">
+                      </div>
+                      <label for="inputPassword1" class="form-label">Senha</label>
+                        <input type="password" id="inputPassword1" class="form-control" aria-labelledby="passwordHelpBlock" autocomplete="off">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="cancelar">Cancelar</button>
+                  <button type="button" class="btn btn-primary">Entrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form class="modal" tabindex="-1" id="modalCadastrar" style="display: none; background-color: rgba(0, 0, 0, 0.5);" data-formulario>
+            <div class="modal-dialog" style="margin-top: 20%;">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Cadastre-se</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="iconeCadastrar"></button>
+                </div>
+                <div class="modal-body">
+                    <label for="name" class="form-label">Nome Completo</label>
+                    <input data-nome type="name" id="name" name="name" class="form-control" aria-labelledby="passwordHelpBlock2" autocomplete="off" required>
+                    <label for="exampleFormControlInput2" class="form-label">E-mail</label>
+                    <input data-email type="email" name="email" class="form-control" id="exampleFormControlInput2" placeholder="nome@exemplo.com" autocomplete="off" required>
+                    <label for="inputPassword2" class="form-label">Senha</label>
+                    <input data-senha type="password" name="password" id="inputPassword2" class="form-control" aria-labelledby="passwordHelpBlock3" autocomplete="off" required>
+                    <label for="inputPassword3" class="form-label">Confirmar senha</label>
+                    <input data-senhaConfirma type="password" name="password" id="inputPassword3" class="form-control" aria-labelledby="passwordHelpBlock4" autocomplete="off" required>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="cancelarCadastrar">Cancelar</button>
+                  <button type="submit" class="btn btn-primary" id="cadastrado">Cadastrar</button>
+                </div>
+              </div>
+            </div>
+        </form>
     </header>
     <main>
         <span class="sobre">
@@ -122,11 +169,14 @@
         </h1>
         <p class="footer-subtitulo">Seja o primeiro a saber quando novas vagas serão abertas!</p>
         <div class="footerdiv">
-            <input type="text" class="footer-input" placeholder="Seu e-mail">
-            <button class="footer-button">Cadastrar</button>
+            <input type="text" class="footer-input" placeholder="Seu e-mail" required data-email-footer>
+            <button type="submit" class="footer-button" id="cadastrarEmail">Cadastrar</button>
         </div>
         <p class="footer-arroba">© 2022 OptimusTech. Todos os direitos reservados.</p>
     </footer>
-        
+        <script src="./main.js"></script>
+        <script src="./conexaoApi.js" type="module"></script>
+        <script src="./criarCadastro.js" type="module"></script>
+
 </body>
 </html>
