@@ -13,6 +13,20 @@
       "senha": "de",
       "senhaConfirma": "de",
       "id": 2
+    },
+    {
+      "nome": "Laura",
+      "email": "verbinen@gmail.com",
+      "senha": "123",
+      "senhaConfirma": "123",
+      "id": 3
+    },
+    {
+      "nome": "lucas",
+      "email": "lucas@luas.com",
+      "senha": "123123123123",
+      "senhaConfirma": "123123123123",
+      "id": 4
     }
   ]
 }
